@@ -4,3 +4,4 @@ uvicorn
 requests
 pytesseract
 git+https://github.com/manjulaRathnayaka/secureocr.git
+python-multipart
