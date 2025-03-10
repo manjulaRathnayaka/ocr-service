@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: OCR Service
+  version: 1.0.0
+paths:
+  /ocr/:
+    post:
+      summary: Perform OCR on an uploaded image
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: Extracted text from image
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  filename:
+                    type: string
+                  text:
+                    type: string
+        "400":
+          description: Bad request

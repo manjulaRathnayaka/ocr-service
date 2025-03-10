@@ -1,0 +1,6 @@
+fastapi
+pillow
+uvicorn
+requests
+pytesseract
+git+https://github.com/trusted-dev/secureocr.git

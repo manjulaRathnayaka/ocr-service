@@ -1,0 +1,13 @@
+schemaVersion: 1.1
+
+endpoints:
+  - name: ocr-service
+    displayName: ocr-service
+    service:
+      basePath: /
+      port: 8000
+    type: REST
+    networkVisibilities:
+      - Public
+      - Organization
+    schemaFilePath: .choreo/openapi.yaml
